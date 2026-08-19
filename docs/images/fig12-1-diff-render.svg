@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="330" viewBox="0 0 880 330" font-family="Microsoft YaHei, sans-serif">
+  <rect width="880" height="330" fill="#ffffff"/>
+
+  <!-- 左：整屏重绘 -->
+  <text x="210" y="36" text-anchor="middle" font-size="16" font-weight="bold" fill="#666">整屏重绘（会闪）</text>
+  <rect x="60" y="50" width="300" height="200" rx="12" fill="#f4f4f8" stroke="#9fa8da" stroke-width="2"/>
+  <rect x="80" y="70" width="260" height="24" rx="4" fill="#ffffff" stroke="#cccccc"/>
+  <rect x="80" y="102" width="260" height="24" rx="4" fill="#ffffff" stroke="#cccccc"/>
+  <rect x="80" y="134" width="260" height="24" rx="4" fill="#ffe8e6" stroke="#cf222e"/>
+  <rect x="80" y="166" width="260" height="24" rx="4" fill="#ffe8e6" stroke="#cf222e"/>
+  <rect x="80" y="198" width="260" height="24" rx="4" fill="#ffe8e6" stroke="#cf222e"/>
+  <text x="210" y="282" text-anchor="middle" font-size="13" fill="#cf222e">每次擦掉整屏重抄 → 频繁白闪</text>
+
+  <!-- 右：差分渲染 -->
+  <text x="660" y="36" text-anchor="middle" font-size="16" font-weight="bold" fill="#3949ab">差分渲染（不闪）</text>
+  <rect x="510" y="50" width="300" height="200" rx="12" fill="#eef1fb" stroke="#5c6bc0" stroke-width="2"/>
+  <rect x="530" y="70" width="260" height="24" rx="4" fill="#ffffff" stroke="#cccccc"/>
+  <rect x="530" y="102" width="260" height="24" rx="4" fill="#ffffff" stroke="#cccccc"/>
+  <rect x="530" y="134" width="260" height="24" rx="4" fill="#fff8e1" stroke="#f9a825" stroke-width="2"/>
+  <rect x="530" y="166" width="260" height="24" rx="4" fill="#ffffff" stroke="#cccccc"/>
+  <rect x="530" y="198" width="260" height="24" rx="4" fill="#ffffff" stroke="#cccccc"/>
+  <text x="660" y="282" text-anchor="middle" font-size="13" fill="#3949ab">只重画变化的那一行 → 画面稳定</text>
+
+  <text x="440" y="315" text-anchor="middle" font-size="13.5" fill="#999">再用同步输出把一帧打包成原子操作，杜绝"画一半"的中间态</text>
+</svg>

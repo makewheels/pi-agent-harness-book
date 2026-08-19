@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="330" viewBox="0 0 900 330" font-family="Microsoft YaHei, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#5c6bc0"/>
+    </marker>
+  </defs>
+  <rect width="900" height="330" fill="#ffffff"/>
+
+  <rect x="30" y="120" width="180" height="90" rx="14" fill="#fff8e1" stroke="#f9a825" stroke-width="2.5"/>
+  <text x="120" y="152" text-anchor="middle" font-size="17" font-weight="bold" fill="#e65100">Pi</text>
+  <text x="120" y="176" text-anchor="middle" font-size="12.5" fill="#666">jiti 直接跑 TS</text>
+  <text x="120" y="194" text-anchor="middle" font-size="12.5" fill="#666">无需编译</text>
+
+  <line x1="380" y1="43" x2="215" y2="140" stroke="#5c6bc0" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <line x1="380" y1="101" x2="215" y2="150" stroke="#5c6bc0" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <line x1="380" y1="159" x2="215" y2="165" stroke="#5c6bc0" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <line x1="380" y1="217" x2="215" y2="180" stroke="#5c6bc0" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <line x1="380" y1="275" x2="215" y2="195" stroke="#5c6bc0" stroke-width="1.8" marker-end="url(#arrow)"/>
+
+  <rect x="380" y="20" width="480" height="46" rx="12" fill="#eef1fb" stroke="#5c6bc0" stroke-width="2"/>
+  <text x="620" y="49" text-anchor="middle" font-size="14" fill="#333">~/.pi/agent/extensions/*.ts <tspan fill="#777" font-size="12.5">· 全局</tspan></text>
+  <rect x="380" y="78" width="480" height="46" rx="12" fill="#eef1fb" stroke="#5c6bc0" stroke-width="2"/>
+  <text x="620" y="107" text-anchor="middle" font-size="14" fill="#333">.pi/extensions/*.ts <tspan fill="#777" font-size="12.5">· 项目（信任后加载）</tspan></text>
+  <rect x="380" y="136" width="480" height="46" rx="12" fill="#eef1fb" stroke="#5c6bc0" stroke-width="2"/>
+  <text x="620" y="165" text-anchor="middle" font-size="14" fill="#333">settings.json 的 packages / extensions</text>
+  <rect x="380" y="194" width="480" height="46" rx="12" fill="#eef1fb" stroke="#5c6bc0" stroke-width="2"/>
+  <text x="620" y="223" text-anchor="middle" font-size="14" fill="#333">pi install 装的包 <tspan fill="#777" font-size="12.5">· 见第 10 章</tspan></text>
+  <rect x="380" y="252" width="480" height="46" rx="12" fill="#f4f4f8" stroke="#9fa8da" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <text x="620" y="281" text-anchor="middle" font-size="14" fill="#666">pi -e ./xx.ts <tspan font-size="12.5">· 临时测试</tspan></text>
+
+  <text x="450" y="320" text-anchor="middle" font-size="13" fill="#3949ab">改完扩展敲 /reload 热重载，无需重启</text>
+</svg>
