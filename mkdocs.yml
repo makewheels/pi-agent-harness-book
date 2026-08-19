@@ -1,0 +1,64 @@
+site_name: 从零读懂 Pi Agent Harness
+site_description: 一本写给不读代码的人的 Pi（earendil-works/pi）学习书
+site_author: makewheels
+site_url: https://makewheels.github.io/pi-agent-harness-book/
+docs_dir: docs
+
+theme:
+  name: material
+  language: zh
+  font: false
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换夜间模式
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - extra.css
+
+nav:
+  - 首页: index.md
+  - 第一部分 初见:
+    - 第1章 什么是 Pi：一辆附赠零件图纸的车: ch01.md
+    - 第2章 5 分钟跑起来: ch02.md
+    - 第3章 俯瞰地图：Pi 的 10 个包: ch03.md
+  - 第二部分 解剖器官:
+    - 第4章 30 家大模型的普通话：pi-ai 统一层: ch04.md
+    - 第5章 一次对话的完整旅程：agent loop 与事件流: ch05.md
+    - 第6章 四只手脚：内置工具与工具执行: ch06.md
+    - 第7章 对话的记忆：会话树与压缩: ch07.md
+  - 第三部分 自我扩展之魂:
+    - 第8章 Extensions：教 Pi 学新本事: ch08.md
+    - 第9章 Skills、提示词模板与主题: ch09.md
+    - 第10章 零件市场：Pi Packages: ch10.md
+  - 第四部分 进阶与动手:
+    - 第11章 Pi 的分身术：四种模式与 SDK 内嵌: ch11.md
+    - 第12章 终端里的艺术：Pi 的屏幕是怎么画的: ch12.md
+    - 第13章 组装你自己的 Pi：后记: ch13.md
