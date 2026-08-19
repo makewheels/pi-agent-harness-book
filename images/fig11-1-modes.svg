@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="340" viewBox="0 0 900 340" font-family="Microsoft YaHei, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#5c6bc0"/>
+    </marker>
+  </defs>
+  <rect width="900" height="340" fill="#ffffff"/>
+
+  <rect x="30" y="130" width="180" height="80" rx="14" fill="#fff8e1" stroke="#f9a825" stroke-width="2.5"/>
+  <text x="120" y="164" text-anchor="middle" font-size="17" font-weight="bold" fill="#e65100">同一个 Pi</text>
+  <text x="120" y="190" text-anchor="middle" font-size="13" fill="#666">核心引擎不变</text>
+
+  <line x1="210" y1="150" x2="330" y2="60" stroke="#5c6bc0" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="210" y1="160" x2="330" y2="120" stroke="#5c6bc0" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="210" y1="175" x2="330" y2="180" stroke="#5c6bc0" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="210" y1="185" x2="330" y2="240" stroke="#5c6bc0" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="210" y1="195" x2="330" y2="300" stroke="#5c6bc0" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="332" y="36" width="300" height="48" rx="12" fill="#eef1fb" stroke="#5c6bc0" stroke-width="2"/>
+  <text x="482" y="66" text-anchor="middle" font-size="14" fill="#333">interactive <tspan fill="#777" font-size="12.5">· pi（默认交互界面）</tspan></text>
+  <rect x="332" y="96" width="300" height="48" rx="12" fill="#eef1fb" stroke="#5c6bc0" stroke-width="2"/>
+  <text x="482" y="126" text-anchor="middle" font-size="14" fill="#333">print <tspan fill="#777" font-size="12.5">· pi -p（纯文本结果）</tspan></text>
+  <rect x="332" y="156" width="300" height="48" rx="12" fill="#eef1fb" stroke="#5c6bc0" stroke-width="2"/>
+  <text x="482" y="186" text-anchor="middle" font-size="14" fill="#333">json <tspan fill="#777" font-size="12.5">· 结构化事件流</tspan></text>
+  <rect x="332" y="216" width="300" height="48" rx="12" fill="#eef1fb" stroke="#5c6bc0" stroke-width="2"/>
+  <text x="482" y="246" text-anchor="middle" font-size="14" fill="#333">rpc <tspan fill="#777" font-size="12.5">· 供别的进程集成</tspan></text>
+  <rect x="332" y="276" width="300" height="48" rx="12" fill="#fff8e1" stroke="#f9a825" stroke-width="2.5"/>
+  <text x="482" y="306" text-anchor="middle" font-size="14" fill="#e65100">SDK 内嵌 <tspan fill="#777" font-size="12.5">· 装进你的程序</tspan></text>
+
+  <text x="760" y="170" text-anchor="middle" font-size="13.5" fill="#3949ab">分身的是用法</text>
+  <text x="760" y="192" text-anchor="middle" font-size="13.5" fill="#3949ab">不是引擎</text>
+</svg>
